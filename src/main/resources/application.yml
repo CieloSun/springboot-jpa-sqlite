@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        driver-class-name: org.sqlite.JDBC
+        url: jdbc:sqlite:d:\\db\\test.db
+        username:
+        password:
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: false
+        database-platform: com.cielo.sqlite.dialect.SQLiteDialect
+    thymeleaf:
+        cache: false
